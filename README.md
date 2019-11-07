@@ -5,19 +5,28 @@ Compile spring app with maven adn declare jenkins pipeline for compile test crea
 This is a very simple app maven api rest for example compile and push image with jenkinsfile.
 
 Build
+
+```
 mvn package
+```
 
 Run
+
+```
 java -jar .\target\hello-spring-apirest-0.1.0.jar
+```
 
 send http request to port 8080 with path /hello
-http://localhosts:8080/hello
+
+```
+curl http://localhosts:8080/hello
+```
 
 reponse with:
-{
-    "id": 1,
-    "content": "Hello, World!"
-}
+
+```
+{"id": 1,"content": "Hello, World!"}
+```
 
 video example:
 
